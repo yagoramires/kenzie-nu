@@ -1,0 +1,22 @@
+.home {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .home {
+        max-width: 1024px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 5rem;
+    }
+
+    .form {
+        width: 355px;
+    }
+
+    .resume {
+        width: calc(100% - 355px);
+    }
+}

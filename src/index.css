@@ -1,0 +1,29 @@
+:root {
+  --color-primary: #FD377E;
+  --color-primary-2: #E34981;
+  --color-secondary: #03B898;
+  --grey-4: #212529;
+  --grey-3: #868E96;
+  --grey-2: #E9ECEF;
+  --grey-1: #F8F9FA;
+  --w-title-1: 700;
+  --w-title-2: 700;
+  --w-title-3: 700;
+  --w-title-4: 700;
+  --w-headline: 400;
+  --w-body: 400;
+  --f-title-1: 38px;
+  --f-title-2: 22px;
+  --f-title-3: 16px;
+  --f-title-4: 12px;
+  --f-headline: 16px;
+  --f-body: 12px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}

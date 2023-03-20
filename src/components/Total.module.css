@@ -1,0 +1,29 @@
+.totalContainer {
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+}
+
+.totalContainer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalContainer h2 {
+    font-size: var(--f-title-3);
+    font-weight: var(--w-title-3);
+    color: var(--grey-4);
+}
+
+.totalContainer p {
+    font-size: var(--f-title-3);
+    font-weight: var(--w-title-3);
+    color: var(--color-primary);
+}
+
+.totalContainer span {
+    font-size: var(--f-title-4);
+    font-weight: var(--w-title-4);
+    color: #343A40;
+}

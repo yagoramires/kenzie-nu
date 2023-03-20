@@ -1,0 +1,19 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.resume h2 {
+    font-size: var(--f-title-3);
+    font-weight: var(--w-title-3);
+    color: var(--grey-4);
+}
+
+.resume p {
+    font-size: var(--f-title-2);
+    font-weight: var(--w-title-2);
+    color: #343A40;
+}
