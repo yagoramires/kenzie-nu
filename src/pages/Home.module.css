@@ -3,6 +3,11 @@
     margin: 0 auto;
 }
 
+.form {
+    width: 100%;
+    margin: 0;
+}
+
 @media (min-width: 1024px) {
     .home {
         max-width: 1024px;
@@ -13,7 +18,7 @@
     }
 
     .form {
-        width: 355px;
+        max-width: 355px;
     }
 
     .resume {

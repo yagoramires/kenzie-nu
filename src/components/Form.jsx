@@ -11,7 +11,7 @@ const Form = () => {
       <span>Ex: Compra de roupas</span>
       <label>
         <span>Valor (R$)</span>
-        <input type='text' placeholder='1' />
+        <input type='number' placeholder='1' />
       </label>
       <label>
         <span>Tipo de valor</span>

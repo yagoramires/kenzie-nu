@@ -6,6 +6,7 @@ const Resume = () => {
   return (
     <div className={styles.resume}>
       <h2>Resumo financeiro</h2>
+
       <p>Você ainda não possui nenhum lançamento</p>
       <Card />
     </div>
