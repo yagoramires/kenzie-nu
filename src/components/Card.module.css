@@ -25,12 +25,17 @@
     border: none;
     border-radius: 2px;
     color: var(--grey-4);
+    cursor: pointer;
 }
 
 .card h3 {
     font-size: var(--f-title-3);
     font-weight: var(--w-title-3);
     color: var(--grey-4);
+}
+
+.card h3::first-letter {
+    text-transform: uppercase;
 }
 
 .card p {
