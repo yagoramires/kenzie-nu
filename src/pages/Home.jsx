@@ -12,7 +12,8 @@ const Home = () => {
     <main className={styles.home}>
       <div className={styles.form}>
         <Form transactions={transactions} setTransactions={setTransactions} />
-        <Total transactions={transactions} />
+
+        {transactions.length === 0 ? '' : <Total transactions={transactions} />}
       </div>
       <div className={styles.resume}>
         <Resume transactions={transactions} setTransactions={setTransactions} />

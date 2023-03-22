@@ -6,18 +6,21 @@ const Resume = ({ transactions, setTransactions }) => {
   return (
     <div className={styles.resume}>
       <h2>Resumo financeiro</h2>
-      {transactions.length > 0 ? (
-        transactions.map((transaction) => (
-          <Card
-            key={transaction.id}
-            transaction={transaction}
-            transactions={transactions}
-            setTransactions={setTransactions}
-          />
-        ))
-      ) : (
-        <p>Você ainda não possui nenhum lançamento</p>
-      )}
+
+      <ul>
+        {transactions.length > 0 ? (
+          transactions.map((transaction) => (
+            <Card
+              key={transaction.id}
+              transaction={transaction}
+              transactions={transactions}
+              setTransactions={setTransactions}
+            />
+          ))
+        ) : (
+          <p>Você ainda não possui nenhum lançamento</p>
+        )}
+      </ul>
     </div>
   );
 };

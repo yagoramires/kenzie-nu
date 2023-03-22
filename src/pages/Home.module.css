@@ -6,7 +6,14 @@
 .form {
     width: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
+
 
 @media (min-width: 1024px) {
     .home {
@@ -19,6 +26,7 @@
 
     .form {
         max-width: 355px;
+        margin: 0;
     }
 
     .resume {

@@ -11,21 +11,25 @@ const Card = ({ transaction, transactions, setTransactions }) => {
   };
 
   return (
-    <div
+    <li
       className={`${styles.card} ${
         transaction.type === 'Entrada' ? styles.green : styles.grey
       }`}
     >
-      <h3>{transaction.description}</h3>
-      <p>{transaction.type}</p>
-      <p>
-        {Number(transaction.value).toLocaleString('pt-BR', {
-          style: 'currency',
-          currency: 'BRL',
-        })}
-      </p>
-      <button onClick={handleDelete}>Excluir</button>
-    </div>
+      <div>
+        <h3>{transaction.description}</h3>
+        <p>{transaction.type}</p>
+      </div>
+      <div>
+        <p>
+          {Number(transaction.value).toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+          })}
+        </p>
+        <button onClick={handleDelete}>Excluir</button>
+      </div>
+    </li>
   );
 };
 

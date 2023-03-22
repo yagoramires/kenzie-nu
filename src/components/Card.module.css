@@ -7,6 +7,15 @@
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
+    width: 100%;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 .green {
@@ -17,7 +26,7 @@
     border-left: 5px solid var(--grey-2);
 }
 
-.card button {
+.card div button {
     padding: 5px 8px;
     background: var(--grey-2);
     font-weight: var(--w-body);
@@ -28,22 +37,30 @@
     cursor: pointer;
 }
 
-.card h3 {
+.card div h3 {
     font-size: var(--f-title-3);
     font-weight: var(--w-title-3);
     color: var(--grey-4);
 }
 
-.card h3::first-letter {
+.card div h3::first-letter {
     text-transform: uppercase;
 }
 
-.card p {
+.card div p {
     font-size: var(--f-body);
     font-weight: var(--w-body);
     color: #343A40;
 }
 
-.card p:nth-of-type(2) {
+.card div p:nth-of-type(2) {
     color: #212529;
+}
+
+@media (min-width: 1024px) {
+    .card {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

@@ -13,7 +13,15 @@ const Form = ({ transactions, setTransactions }) => {
       alert('Preencha todos os campos!');
     }
 
-    const id = transactions.length + 1;
+    let id;
+
+    if (transactions.length > 0) {
+      const length = transactions.length;
+      const lastItem = transactions[length - 1];
+      id = lastItem.id + 1;
+    } else {
+      id = 1;
+    }
 
     const newValue = type === 'Entrada' ? value : `-${value}`;
 
